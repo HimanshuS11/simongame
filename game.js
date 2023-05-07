@@ -51,7 +51,7 @@ $(".btn").click(function() {   //buutton click
       }, 200);
       var currscore=nextSequence()-1;
       highscore=Math.max(highscore,currscore);
-      $("#level-title").text("Game Over! Your score is "+currscore+" Press Any Key to Restart");
+      $("#level-title").text("Game Over! Your score is "+currscore+" \nPress Any Key to Restart");
       $('h3').text('Highscore : '+highscore);
       startOver();
     }
