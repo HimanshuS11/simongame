@@ -7,6 +7,14 @@ var highscore=0;
 var started = false;
 var level = 0;
 
+$(".title3").click(function ()
+{
+  if (!started) {
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+  }  
+});
 $(document).keypress(function() {     //press to start
   if (!started) {
     $("#level-title").text("Level " + level);
